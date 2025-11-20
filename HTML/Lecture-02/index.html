@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The <title> tag defines the title shown on the browser tab -->
+    <title>Lecture 02 - HTML Elements and Comments</title>
+  </head>
+
+  <body>
+    <!-- 
+      ✅ In this lecture, you will learn:
+      1. What is an HTML Element?
+      2. What is a Nested HTML Element?
+      3. What are Comments?
+      4. What is Emmet?
+    -->
+
+    <!-- ===================================================== -->
+    <!-- 🟩 1️⃣ What is an HTML Element? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      An HTML element consists of:
+        - A start tag (e.g., <p>)
+        - Some content (e.g., This is para)
+        - An end tag (e.g., </p>)
+      Together, these three parts make one HTML element.
+    -->
+
+    <p>This is paragraph one.</p>
+    <p>This is paragraph two.</p>
+
+    <!-- ===================================================== -->
+    <!-- 🟩 2️⃣ What is a Nested HTML Element? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      Nested HTML Elements occur when one element is placed
+      inside another element. 
+    -->
+
+    <div class="container">
+      <h1>This is a heading inside a div</h1>
+      <p>This is a paragraph inside the same div</p>
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- 🟩 3️⃣ What are Comments? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      Comments are used to add notes in your HTML code.
+      These are ignored by browsers and not displayed on the web page.
+      You can use them to explain your code.
+    -->
+
+    <!-- Example: A comment describing a button -->
+    <!-- When user clicks this button, the form will be submitted -->
+    <button>Submit</button>
+
+    <!-- This is a single-line comment -->
+
+    <!-- 
+      This is a 
+      multi-line 
+      comment
+    -->
+
+    <!-- ===================================================== -->
+    <!-- 🟩 4️⃣ What is Emmet? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      Emmet is a built-in tool in VS Code that helps you write
+      HTML and CSS faster using shortcuts.
+
+      Example:
+        div.container>h1+p 
+        expands to:
+        <div class="container">
+          <h1></h1>
+          <p></p>
+        </div>
+    -->
+
+    <!-- Example of Emmet-style structure -->
+    <div class="container">
+      <div>
+        <h1>Heading</h1>
+        <p>This is a paragraph.</p>
+      </div>
+    </div>
+  </body>
+</html>

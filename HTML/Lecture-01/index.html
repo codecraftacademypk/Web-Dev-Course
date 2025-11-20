@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- ===================================================== -->
+<!-- 🟩 1️⃣ <!DOCTYPE html> -->
+<!-- ===================================================== -->
+<!-- 
+  This declaration tells the browser that the document is written in HTML5 
+  (the latest version of HTML).
+  It must always be the first line of your HTML file.
+-->
+
+<html lang="en">
+  <!-- ===================================================== -->
+  <!-- 🟩 2️⃣ <html> Tag -->
+  <!-- ===================================================== -->
+  <!-- 
+    <html> is the root element of every web page.
+    All content and code go inside this element.
+    The attribute lang="en" means the page language is English.
+  -->
+
+  <head>
+    <!-- ===================================================== -->
+    <!-- 🟩 3️⃣ <head> Section -->
+    <!-- ===================================================== -->
+    <!-- 
+      The <head> section contains metadata — information *about* the page, 
+      not visible on the website itself.
+      It includes the title, meta tags, and links to external CSS/JS files.
+    -->
+
+    <!-- 🟨 Character Encoding -->
+    <meta charset="UTF-8" />
+    <!-- 
+      This sets the character encoding to UTF-8, which supports nearly all
+      characters and symbols (like English, Urdu, Arabic, emojis, etc.).
+    -->
+
+    <!-- 🟨 Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      This makes your webpage responsive.
+      - width=device-width → fits the screen size of any device.
+      - initial-scale=1.0 → sets the initial zoom level to 100%.
+    -->
+
+    <!-- 🟨 Page Title -->
+    <title>Lecture 02 - HTML Basic Structure</title>
+    <!-- 
+      The text inside <title> appears on the browser tab 
+      and is important for SEO (Search Engine Optimization).
+    -->
+
+    <!-- 🟨 External CSS File -->
+    <link rel="stylesheet" href="./script.css" />
+    <!-- 
+      The <link> tag connects external files.
+      rel="stylesheet" means this is a CSS file.
+      href="./script.css" means the file is in the same folder as this HTML file.
+    -->
+  </head>
+
+  <body>
+    <!-- ===================================================== -->
+    <!-- 🟩 4️⃣ <body> Section -->
+    <!-- ===================================================== -->
+    <!-- 
+      The <body> is the visible part of the webpage.
+      All text, images, buttons, videos, and other content go here.
+    -->
+
+    <!-- 🟦 Example Heading -->
+    <h1>Hello, World!</h1>
+    <!-- <h1> is the largest heading in HTML. Used for main titles. -->
+
+    <!-- 🟦 Example Paragraph -->
+    <p>This is my first paragraph in HTML.</p>
+    <!-- <p> defines a block of text. Used for writing content or descriptions. -->
+  </body>
+
+  <!-- ===================================================== -->
+  <!-- 🟩 5️⃣ Closing </html> Tag -->
+  <!-- ===================================================== -->
+  <!-- 
+    This marks the end of the HTML document.
+    Everything in your webpage must be inside the opening and closing <html> tags.
+  -->
+</html>
