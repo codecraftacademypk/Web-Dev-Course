@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 08</title>
+  </head>
+
+  <body>
+    <!----------- What is HTML List  ----------->
+    <!--
+      HTML Lists are used to organize content in a clean and readable format.
+      They help present information either in a specific order or without order.
+      There are three types of lists:
+      1. Ordered List (numbering)
+      2. Unordered List (bullets)
+      3. Description List (terms and definitions)
+    -->
+
+    <!----- What is Ordered List ----->
+    <!--
+      Ordered List (<ol>) displays items in a specific sequence.
+      It automatically gives numbers or other counting formats like A, a, I, i.
+      Each item inside the list is written using <li> tag.
+    -->
+
+    <!-- 1. Default Numbered Ordered List -->
+    <ol>
+      <!-- Default numbering starts from 1 -->
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 2. Uppercase Letters Ordered List -->
+    <h2>Uppercase Letters Ordered List</h2>
+    <!-- type="A" = A, B, C, D numbering -->
+    <ol type="A">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 3. Lowercase Letters Ordered List -->
+    <h2>Lowercase Letters Ordered List</h2>
+    <!-- type="a" = a, b, c, d numbering -->
+    <ol type="a">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 4. Uppercase Roman Numbers Ordered List -->
+    <h2>Uppercase Roman Numbers Ordered List</h2>
+    <!-- type="I" = I, II, III, IV numbering -->
+    <ol type="I">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 5. Lowercase Roman Numbers Ordered List -->
+    <h2>Lowercase Roman Numbers Ordered List</h2>
+    <!-- type="i" = i, ii, iii, iv numbering -->
+    <ol type="i">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 6. Reverse Ordered List -->
+    <h2>Reverse Ordered List</h2>
+    <!-- reversed attribute counts items backward -->
+    <ol reversed>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 7. Control List Counting (Start from a specific number) -->
+    <h2>Control List</h2>
+    <!-- start="6" means numbering begins from 6 instead of 1 -->
+    <ol start="6">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <!-- 8. Nested Ordered Lists -->
+    <h2>Nested Ordered Lists</h2>
+    <!-- Nested lists create sub-categories under a main list item -->
+    <ol>
+      <li>
+        JavaScript
+        <!-- Sub-list for JavaScript frameworks -->
+        <ol>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Vue.js</li>
+        </ol>
+      </li>
+
+      <li>
+        Python
+        <!-- Sub-list for Python frameworks -->
+        <ol>
+          <li>Django</li>
+          <li>Flask</li>
+          <li>Pyramid</li>
+        </ol>
+      </li>
+
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+
+    <hr />
+
+    <!----- What is Unordered List ----->
+    <!--
+      Unordered List (<ul>) displays items without order.
+      It shows bullet points before each item.
+      Bullets can be changed using CSS with list-style-type.
+    -->
+
+    <!-- Default Unordered List -->
+    <ul>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ul>
+
+    <!-- 1. Square Bullet Style -->
+    <h2>Square Bullet</h2>
+    <!-- list-style-type: square = ■ bullet -->
+    <ul style="list-style-type: square">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ul>
+
+    <!-- 2. Circle Bullet Style -->
+    <h2>Circle Bullet</h2>
+    <!-- list-style-type: circle = ○ bullet -->
+    <ul style="list-style-type: circle">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ul>
+
+    <!-- 3. Removing Bullets -->
+    <h2>Removing Bullets</h2>
+    <!-- list-style-type:none removes bullets (used in menus) -->
+    <ul style="list-style-type: none">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ul>
+
+    <!-- 4. Nested Unordered List -->
+    <h2>Nested Unordered List</h2>
+    <!-- Useful for subcategories -->
+    <ul>
+      <li>
+        JavaScript
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Vue.js</li>
+        </ul>
+      </li>
+
+      <li>
+        Python
+        <ul>
+          <li>Django</li>
+          <li>Flask</li>
+          <li>Pyramid</li>
+        </ul>
+      </li>
+
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ul>
+
+    <!-- 5. Website Navigation using UL -->
+    <h2>Website Navigation</h2>
+    <!--
+      Making horizontal navigation using:
+      - list-style-type:none (remove bullets)
+      - display:inline (place items side by side)
+    -->
+    <ul style="list-style-type: none; padding: 0">
+      <li style="display: inline; margin-right: 20px">
+        <a href="#home">Home</a>
+      </li>
+      <li style="display: inline; margin-right: 20px">
+        <a href="#about">About</a>
+      </li>
+      <li style="display: inline; margin-right: 20px">
+        <a href="#services">Services</a>
+      </li>
+      <li style="display: inline; margin-right: 20px">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <hr />
+
+    <!----- What is Description Lists ----->
+    <!--
+      Description List (<dl>) is used to show terms and definitions.
+      <dt> = term/title
+      <dd> = description/explanation
+      It is commonly used for glossaries or FAQs.
+    -->
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JavaScript</dt>
+      <dd>Scripting language for Web pages</dd>
+    </dl>
+  </body>
+</html>

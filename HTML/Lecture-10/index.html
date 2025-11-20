@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!-- ===================================================== -->
+<!-- 🟩 1️⃣ <!DOCTYPE html> -->
+<!-- ===================================================== -->
+<!-- Declares that the document uses HTML5 (latest HTML standard). -->
+
+<html lang="en">
+  <!-- ===================================================== -->
+  <!-- 🟩 2️⃣ <html> Root Element -->
+  <!-- ===================================================== -->
+  <!-- All visible and invisible elements of the webpage stay inside <html>. -->
+
+  <head>
+    <!-- ===================================================== -->
+    <!-- 🟩 3️⃣ <head> Section -->
+    <!-- ===================================================== -->
+    <!-- Contains metadata, title, styles, and other important page settings. -->
+
+    <meta charset="UTF-8" />
+    <!-- Defines the character encoding. Supports all languages, emojis, etc. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the webpage responsive on all devices (mobile, tablet, desktop). -->
+
+    <title>Lecture 10</title>
+    <!-- Text shown on the browser tab. -->
+  </head>
+
+  <body>
+    <!-- ===================================================== -->
+    <!-- 🟩 4️⃣ What is HTML Form? -->
+    <!-- ===================================================== -->
+    <!-- 
+      HTML forms are used to collect user input.
+      Examples:
+      - Login forms
+      - Signup forms
+      - Survey forms
+      - Contact forms
+      - Search bars
+    -->
+
+    <!-- ===================================================== -->
+    <!-- 🟩 5️⃣ What is <input> Tag? -->
+    <!-- ===================================================== -->
+    <!-- 
+      The <input> tag allows users to enter data.
+      More than 20 types exist (text, email, password, checkbox, radio, etc.).
+    -->
+
+    <!-- ====================== Text Input ====================== -->
+    <form>
+      <!-- A single-line text box for entering general text -->
+      <input type="text" placeholder="Enter your name" required />
+    </form>
+
+    <!-- ================== Email Input ================== -->
+    <form>
+      <!-- Only accepts email format (example@gmail.com). -->
+      <input type="email" placeholder="Enter your email" required />
+    </form>
+
+    <!-- ================= Password Input ================= -->
+    <form>
+      <!-- Hides the characters (●●●●). -->
+      <input type="password" placeholder="Enter your password" />
+    </form>
+
+    <!-- ================= Checkbox ================= -->
+    <form>
+      <!-- Used for options that can have multiple selections. -->
+      <input type="checkbox" checked />
+    </form>
+
+    <!-- ================= Radio Button =============== -->
+    <form>
+      <!-- Used when only one option must be selected (male/female). -->
+      <input type="radio" checked />
+    </form>
+
+    <!-- ================= Number Input ================ -->
+    <form>
+      <input type="number" placeholder="Enter you mobile number" />
+    </form>
+
+    <!-- ================= Date Picker ================= -->
+    <form>
+      <input type="date" />
+    </form>
+
+    <!-- ================= File Upload ================== -->
+    <form>
+      <input type="file" />
+      <!-- Users can upload images, PDFs, videos, etc. -->
+    </form>
+
+    <!-- ================= Color Picker ================== -->
+    <form>
+      <input type="color" />
+      <!-- Allows user to pick a color from palette. -->
+    </form>
+
+    <!-- ================= Range Slider ================== -->
+    <form>
+      <input type="range" min="0" max="10" value="2" />
+      <!-- Creates a slider (useful for volume, brightness, etc.). -->
+    </form>
+
+    <!-- ================ Hidden Input =================== -->
+    <form>
+      <input type="hidden" value="12345" />
+      <!-- Hidden data is secretly sent to the server. User cannot see it. -->
+    </form>
+
+    <!-- ================ Image as Button ================= -->
+    <form>
+      <!-- Clicking the image submits the form. -->
+      <input type="image" src="data:image/png;base64,iVBORw0KGgoAAA..." />
+    </form>
+
+    <!-- ================ Button Input =================== -->
+    <form>
+      <input type="button" value="Click" />
+      <!-- Does not submit form unless JavaScript is used. -->
+    </form>
+
+    <!-- ================ Submit Button ================== -->
+    <form>
+      <input type="submit" />
+      <button type="submit">Click to Submit</button>
+    </form>
+
+    <!-- ================================================ -->
+    <!-- 🟩 6️⃣ What is <label> Tag? -->
+    <!-- ================================================ -->
+    <!-- Clicking a label focuses the input field. Improves form usability. -->
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter your name" id="name" />
+
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email" id="email" />
+
+      <!-- Wrapped label (another method) -->
+      <br />
+      <label>
+        Name:
+        <input type="text" placeholder="Enter your full name" />
+      </label>
+
+      <br />
+      <label>
+        Email:
+        <input type="email" placeholder="Enter your email" />
+      </label>
+    </form>
+
+    <!-- ================================================ -->
+    <!-- 🟩 7️⃣ What is <textarea>? -->
+    <!-- ================================================ -->
+    <!-- Used for multi-line text such as feedback, comments, messages. -->
+    <textarea name="text" rows="4" cols="50"></textarea>
+
+    <!-- ================================================= -->
+    <!-- 🟩 8️⃣ Simple Form Example -->
+    <!-- ================================================= -->
+    <hr />
+
+    <form>
+      <label>
+        Name:
+        <input type="text" placeholder="Enter your name" />
+      </label>
+
+      <br />
+
+      <label>
+        Email:
+        <input type="email" placeholder="Enter your email" />
+      </label>
+
+      <br />
+
+      <label>What is your gender</label>
+
+      <br />
+      <label><input type="radio" name="gender" /> Male</label>
+
+      <br />
+      <label><input type="radio" name="gender" /> Female</label>
+
+      <br />
+      <label><input type="radio" name="gender" /> Other</label>
+    </form>
+
+    <!-- ================================================ -->
+    <!-- 🟩 9️⃣ What is <select> Tag? (Dropdown Menu) -->
+    <!-- ================================================ -->
+    <form>
+      <select>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </form>
+
+    <form>
+      <label>Select your color:</label>
+      <select>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </form>
+
+    <form>
+      <label>Color:</label>
+      <select>
+        <option disabled selected>Select your color:</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+      <hr />
+
+      <!-- =============================================== -->
+      <!-- 🟩 🔟 What is <fieldset> and <legend>? -->
+      <!-- =============================================== -->
+      <!-- 
+        <fieldset> groups related form elements.
+        <legend> gives a title to that group.
+      -->
+
+      <form id="codecraft">
+        <label>
+          Name:
+          <input type="text" placeholder="Enter your name" />
+        </label>
+
+        <br />
+
+        <label>
+          Email:
+          <input type="email" placeholder="Enter your email" />
+        </label>
+
+        <br />
+
+        <fieldset>
+          <legend>JavaScript</legend>
+
+          <label>
+            Title:
+            <input type="text" />
+          </label>
+
+          <br />
+
+          <label>
+            Link:
+            <input type="text" />
+          </label>
+
+          <br />
+
+          <label>
+            User ID:
+            <input type="text" />
+          </label>
+
+          <br />
+        </fieldset>
+      </form>
+
+      <!-- Second fieldset connected to form using form="id" -->
+      <fieldset form="codecraft">
+        <legend>Java</legend>
+
+        <label>
+          Title:
+          <input type="text" />
+        </label>
+        <br />
+
+        <label>
+          Link:
+          <input type="text" />
+        </label>
+        <br />
+
+        <label>
+          User ID:
+          <input type="text" />
+        </label>
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>

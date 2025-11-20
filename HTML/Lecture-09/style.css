@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+:root {
+  --primary: #4f46e5;
+  --dark: #111;
+}
+
+/* Navbar */
+header {
+  background: var(--dark);
+  padding: 1rem 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+}
+
+/* Sections */
+section {
+  padding: 3rem 5%;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Project Cards */
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

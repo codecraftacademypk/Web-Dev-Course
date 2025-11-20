@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+      <title>
+      → Shows the name of the webpage in the browser tab.
+    -->
+    <title>Lecture 06</title>
+
+    <!-- ============================
+                INTERNAL CSS
+    ============================= -->
+    <!-- 
+      Internal CSS is written inside <style> in the <head> section.
+
+      .header → Styling the top navigation bar
+      .nav    → Styling the navigation links container
+    -->
+    <style>
+      .header {
+        display: flex; /* Makes items arrange in a row */
+        justify-content: space-between; /* Space between logo & nav menu */
+        align-items: center; /* Centers items vertically */
+        padding: 0 20px; /* Adds space from left & right */
+        background-color: green; /* Background color of the navbar */
+      }
+
+      .nav {
+        width: 200px; /* Fixed width for nav container */
+        display: flex; /* Makes links appear horizontally */
+        justify-content: space-between; /* Even spacing between all links */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ==================================
+           DIV TAG — BASIC NON-SEMANTIC TAG
+    =================================== -->
+    <!--
+      <div> stands for "division".
+      It is used to group content together.
+      It does NOT tell the meaning of content → that’s why it is NON-SEMANTIC.
+      Developers use it for layout, grouping, and organizing elements.
+    -->
+
+    <div>This is div 1</div>
+    <div>This is div 2</div>
+    <div>This is div 3</div>
+    <div>This is div 4</div>
+    <div>This is div 5</div>
+    <div>This is div 6</div>
+
+    <!-- ============================
+         SIMPLE NAVBAR USING <div>
+    ============================= -->
+    <!--
+      This navigation bar is created using normal <div> tags.
+      Good for beginners to understand how layouts work.
+    -->
+    <div class="header">
+      <!-- Website Name / Logo -->
+      <h1>CodeCraft Academy</h1>
+
+      <!-- Navigation Links -->
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ========================================
+           SEMANTIC TAGS — MORE MEANINGFUL HTML
+    ========================================= -->
+    <!--
+      Semantic tags tell the browser & developer 
+      what the content means.
+
+      Examples:
+      <header>  → Top section of page
+      <nav>     → Navigation menu
+      <main>    → Main content
+      <section> → Divided content blocks
+      <footer>  → Bottom section
+    -->
+
+    <!-- ============================
+             HEADER SECTION
+    ============================= -->
+    <!-- Contains website logo and navigation menu -->
+    <header>
+      <div class="container">
+        <h1>CodeCraft Academy</h1>
+
+        <!-- <nav> is a semantic tag for navigation links -->
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============================
+            MAIN CONTENT AREA
+    ============================= -->
+    <!-- Everything inside <main> is the important content of the website -->
+    <main>
+      <!-- ============================
+                HOME SECTION
+      ============================= -->
+      <section id="home">
+        <!-- A card-style container -->
+        <div class="card">
+          <h2>Welcome to CodeCraft Academy</h2>
+          <p>
+            Learn web development, programming, and full-stack projects
+            step-by-step. Our goal is to help students build real skills.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================
+                ABOUT SECTION
+      ============================= -->
+      <section id="about">
+        <div class="card">
+          <h2>About <mark>CodeCraft Academy</mark></h2>
+          <p>
+            We focus on hands-on learning where students build real projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================
+                COURSES SECTION
+      ============================= -->
+      <section id="courses">
+        <h2>Our Courses</h2>
+
+        <!-- Frontend Course -->
+        <div class="card">
+          <h3>Frontend Development</h3>
+          <p>Learn HTML, CSS, and JavaScript to design beautiful websites.</p>
+        </div>
+
+        <!-- Backend Course -->
+        <div class="card">
+          <h3>Backend Development</h3>
+          <p>Master Node.js, Express, and MongoDB to build web applications.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================
+              FOOTER SECTION
+    ============================= -->
+    <!-- Bottom area of the website -->
+    <footer>
+      <p>© 2025 CodeCraft Academy. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

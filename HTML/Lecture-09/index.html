@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown in browser tab -->
+    <title>Lecture 01</title>
+
+    <!-- ================================================= -->
+    <!-- 🟩 4️⃣ Internal CSS Styling -->
+    <!-- ================================================= -->
+    <!-- 
+      table th, td → Applies border to all table header cells (th) and data cells (td)
+      #table → Styling a table by giving it width & background color 
+    -->
+    <style>
+      table th,
+      td {
+        border: 1px solid black;
+      }
+
+      #table {
+        width: 400px;
+        background-color: #f2f2d1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================================================= -->
+    <!-- 🟩 5️⃣ What is an HTML Table? -->
+    <!-- ================================================= -->
+    <!-- 
+      HTML tables organize information in rows and columns.
+      A table is made using:
+      - <table>  → Main container
+      - <tr>     → Table row
+      - <th>     → Table heading (bold + centered by default)
+      - <td>     → Table data cell
+    -->
+
+    <h2>Simple Table</h2>
+
+    <table>
+      <tr>
+        <!-- Header row -->
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll Num</th>
+      </tr>
+
+      <!-- Row 1 -->
+      <tr>
+        <td>Ahmad</td>
+        <td>9th</td>
+        <td>231</td>
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+        <td>Ikram</td>
+        <td>8th</td>
+        <td>432</td>
+      </tr>
+
+      <!-- Row 3 -->
+      <tr>
+        <td>Ihsan</td>
+        <td>7th</td>
+        <td>432</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- ================================================= -->
+    <!-- 🟩 6️⃣ Adding Border to Table -->
+    <!-- ================================================= -->
+    <!-- 
+      Borders make tables easy to read.
+      Border is added using CSS:
+      table th, td { border: 1px solid black; }
+    -->
+
+    <h2>Border</h2>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll Num</th>
+      </tr>
+      <tr>
+        <td>Ahmad</td>
+        <td>9th</td>
+        <td>231</td>
+      </tr>
+      <tr>
+        <td>Ikram</td>
+        <td>8th</td>
+        <td>432</td>
+      </tr>
+      <tr>
+        <td>Ihsan</td>
+        <td>7th</td>
+        <td>432</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- ================================================= -->
+    <!-- 🟩 7️⃣ Column Spanning: colspan -->
+    <!-- ================================================= -->
+    <!-- 
+      colspan="2" 
+      → Merges two columns into one.
+      Used when a heading or data needs more width.
+    -->
+
+    <h2>Span Many Columns</h2>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Ahmad</td>
+        <td>098765432</td>
+        <td>234567890</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- ================================================= -->
+    <!-- 🟩 8️⃣ Row Spanning: rowspan -->
+    <!-- ================================================= -->
+    <!-- 
+      rowspan="2"
+      → Merges two rows vertically.
+      Used to show a common label across multiple rows.
+    -->
+
+    <h2>Span Many Rows</h2>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Ahmad</td>
+      </tr>
+
+      <tr>
+        <!-- Telephone heading covering 2 rows -->
+        <th rowspan="2">Telephone</th>
+        <td>0987654321</td>
+      </tr>
+
+      <tr>
+        <td>0987654322</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- ================================================= -->
+    <!-- 🟩 9️⃣ Adding a Caption -->
+    <!-- ================================================= -->
+    <!-- 
+      <caption> is used to give a title to the table.
+      It appears above the table.
+    -->
+
+    <h2>Caption</h2>
+
+    <table>
+      <caption>
+        Student Data
+      </caption>
+
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll Num</th>
+      </tr>
+
+      <tr>
+        <td>Ahmad</td>
+        <td>8th</td>
+        <td>321</td>
+      </tr>
+
+      <tr>
+        <td>Ikram</td>
+        <td>10th</td>
+        <td>234</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- ================================================ -->
+    <!-- 🟩 🔟 Background Color -->
+    <!-- ================================================= -->
+    <!-- 
+      Using CSS we can change table background color.
+      Here, #table selector gives:
+      - background color
+      - fixed width
+    -->
+
+    <h2>Background Colour</h2>
+
+    <table id="table">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Roll Num</th>
+      </tr>
+      <tr>
+        <td>Ahmad</td>
+        <td>8th</td>
+        <td>321</td>
+      </tr>
+      <tr>
+        <td>Ikram</td>
+        <td>10th</td>
+        <td>234</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- ================================================ -->
+    <!-- 🟩 1️⃣1️⃣ Simple HTML Table Project -->
+    <!-- ================================================= -->
+    <!-- 
+      Demonstrates combination of:
+      - rowspan
+      - colspan
+      - multiple rows
+      - table structure
+    -->
+
+    <h2>Simple HTML Table</h2>
+
+    <table>
+      <tr>
+        <th rowspan="2">Heading</th>
+        <th>Students</th>
+        <th colspan="3">Details</th>
+      </tr>
+
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Departmet</th>
+        <th>Roll Number</th>
+      </tr>
+
+      <tr>
+        <td rowspan="4">Student List</td>
+        <td>1</td>
+        <td>Ikram</td>
+        <td>Computer Science</td>
+        <td>12345</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Ihsan</td>
+        <td>Biology</td>
+        <td>21345</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Ahmad</td>
+        <td>Electrical</td>
+        <td>76543</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Inam</td>
+        <td>Civil</td>
+        <td>87690</td>
+      </tr>
+    </table>
+  </body>
+</html>

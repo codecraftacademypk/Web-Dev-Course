@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <!-- ================================================ -->
+    <!-- 🟩 4️⃣ Main Container -->
+    <!-- ================================================= -->
+    <!-- 
+      We wrap all content in a container for better layout control.
+    -->
+    <div class="container">
+      <!-- ============================================= -->
+      <!-- 🟦 5️⃣ Header Section -->
+      <!-- ============================================== -->
+      <!-- 
+        - <header> is a semantic tag.  
+        - It usually contains title, intro text, or navigation.
+      -->
+      <header class="header">
+        <div class="header-content">
+          <h1 class="title">Survey Form</h1>
+          <p class="description">
+            "Thank you for taking the time to help us improve the platform"
+          </p>
+        </div>
+      </header>
+
+      <!-- ============================================== -->
+      <!-- 🟨 6️⃣ Main Content Section -->
+      <!-- ============================================== -->
+      <!-- 
+        <main> contains the primary content of the webpage.
+      -->
+      <main class="main">
+        <div class="survey">
+          <!-- ============================================ -->
+          <!-- 🟩 7️⃣ HTML Form Starts -->
+          <!-- ============================================ -->
+          <!-- 
+            All user inputs (name, email, text, checkbox etc.)
+            are collected through <form>.
+          -->
+          <form>
+            <!-- ========================================= -->
+            <!-- 🟧 Name Field -->
+            <!-- ========================================== -->
+            <div class="survey-form-data">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                class="form-ctr"
+              />
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 🟧 Email Field -->
+            <!-- =========================================== -->
+            <div class="survey-form-data">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                class="form-ctr"
+              />
+            </div>
+
+            <!-- ========================================= -->
+            <!-- 🟧 Age Field -->
+            <!-- ========================================== -->
+            <!-- The <span> is used to show "optional" text -->
+            <div class="survey-form-data">
+              <label for="number">
+                Age <span class="span">(optional)</span>
+              </label>
+              <input
+                type="number"
+                id="number"
+                placeholder="Enter your age"
+                class="form-ctr"
+              />
+            </div>
+
+            <!-- ========================================= -->
+            <!-- 🟦 Radio Buttons -->
+            <!-- ========================================== -->
+            <!-- 
+              Radio: Only ONE option can be selected.
+              All must use the SAME "name" attribute.
+            -->
+            <div class="survey-form-data">
+              <p class="form-content">
+                Would you recommend freeCodeCamp to a friend?
+              </p>
+
+              <div class="radio">
+                <input type="radio" name="radio-option" checked />
+                Definitely
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="radio-option" />
+                Maybe
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="radio-option" />
+                Not sure
+              </div>
+            </div>
+
+            <!-- ======================================== -->
+            <!-- 🟦 Dropdown Menu -->
+            <!-- ========================================= -->
+            <!-- Allows users to select ONE option from a list -->
+            <div class="survey-form-data">
+              <p class="form-content">
+                Which option best describes your current role?
+              </p>
+
+              <select name="droupdown" class="form-ctr">
+                <option value disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- 🟥 Checkbox -->
+            <!-- ========================================= -->
+            <!-- 
+              Checkbox: Users can select MULTIPLE options.
+            -->
+            <div class="survey-form-data">
+              <p class="form-content">
+                What would you like to see improved?
+                <span class="span">(Check all that apply)</span>
+              </p>
+
+              <div class="checkbox">
+                <input type="checkbox" />Front-end Projects
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />Back-end Projects
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />Data Visualization
+              </div>
+              <div class="checkbox"><input type="checkbox" />Challenges</div>
+              <div class="checkbox">
+                <input type="checkbox" />Open Source Community
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />Gitter help rooms
+              </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 🟫 Textarea -->
+            <!-- ========================================== -->
+            <!-- Used for long text input (comments, messages, feedback) -->
+            <div class="survey-form-data">
+              <p class="form-content">Any comments or suggestions?</p>
+              <textarea
+                name="comment"
+                class="form-ctr"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+
+            <!-- =========================================== -->
+            <!-- 🟩 Submit Button -->
+            <!-- =========================================== -->
+            <div class="survey-form-data">
+              <button type="button" class="form-ctr">Submit</button>
+            </div>
+          </form>
+          <!-- ========== End of Form ========== -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

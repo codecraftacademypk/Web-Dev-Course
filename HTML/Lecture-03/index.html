@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      The <meta> tags define page settings and behavior.
+      charset="UTF-8" allows all characters.
+      viewport ensures your website looks good on all devices.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The <title> tag shows the page name in the browser tab -->
+    <title>Lecture 03 - HTML Attributes, Class & ID</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- ===================================================== -->
+    <!-- 🟩 1️⃣ What are HTML Attributes? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      HTML Attributes are special words added inside the 
+      opening tag of an HTML element.
+      They provide additional information or behavior 
+      to that element.
+      
+      Example: The <a> tag uses the "href" attribute 
+      to define the link address.
+    -->
+
+    <a href="https://ask-ecommerce.netlify.app/" target="_blank">
+      Click on this link
+    </a>
+
+    <!-- 
+      Explanation:
+      - href → defines the URL to open when clicked.
+      - target="_blank" → opens the link in a new browser tab.
+    -->
+
+    <!-- ===================================================== -->
+    <!-- 🟩 2️⃣ What is the Class Attribute? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      The class attribute is used when you want to style 
+      or script a group of elements using the same class name.
+      
+      Example: All <p> elements below share the same class "para".
+    -->
+
+    <p class="para">This is paragraph 1</p>
+    <p class="para">This is paragraph 2</p>
+    <p class="para">This is paragraph 3</p>
+
+    <!-- 
+      You can use the same class on multiple elements.
+      In CSS, you can target all of them using:
+        .para { color: blue; }
+    -->
+
+    <!-- ===================================================== -->
+    <!-- 🟩 3️⃣ What is the ID Attribute? -->
+    <!-- ===================================================== -->
+
+    <!-- 
+      The id attribute is used when you want to uniquely 
+      identify one element on a page.
+      Each id must be unique (used only once).
+    -->
+
+    <p class="para" id="id-para">This is paragraph with unique ID</p>
+
+    <!-- 
+      In CSS, you can target this specific element using:
+        #id-para { color: red; }
+
+      In JavaScript, you can access it using:
+        document.getElementById("id-para")
+    -->
+  </body>
+</html>
