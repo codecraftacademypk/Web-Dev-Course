@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+      3️⃣ Page Title
+      Shown in the browser tab
+    -->
+    <title>Student Portfolio</title>
+  </head>
+
+  <body>
+    <!---------- Header Section ----------->
+    <!-- 
+      The header usually contains navigation links and branding 
+      <header> is semantic and helps search engines understand the structure
+    -->
+    <header>
+      <nav class="navbar">
+        <!-- Website title -->
+        <h1>Portfolio</h1>
+
+        <!-- Navigation menu using unordered list -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <!-- Scrolls to hero section -->
+          <li><a href="#about">About</a></li>
+          <!-- Scrolls to about section -->
+          <li><a href="#projects">Projects</a></li>
+          <!-- Scrolls to projects section -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- Scrolls to contact section -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-------------- Main Section ---------------->
+    <main>
+      <!-- Hero Section -->
+      <!-- 
+        The first section users see on landing 
+        Can include introduction, welcome text, and an image
+      -->
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h2>Welcome to My Portfolio</h2>
+          <p>
+            This website is created using HTML & CSS as a beginner-friendly
+            project.
+          </p>
+        </div>
+
+        <!-- Hero image -->
+        <img
+          src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg"
+          alt="Student img"
+          width="300"
+          height="200"
+        />
+      </section>
+
+      <!-- About Section -->
+      <!-- 
+        Introduces yourself to visitors
+        Explains your skills, interests, or background
+      -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          I am a student learning web development. I enjoy creating simple and
+          clean website layouts using HTML and CSS.
+        </p>
+      </section>
+
+      <!-- Project Section -->
+      <!-- 
+        Shows projects you have built
+        Each project can be displayed as a card or box with title and description
+      -->
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <!-- Individual project card -->
+        <div class="project-card">
+          <h3>Project 1: Simple Webpage</h3>
+          <p>
+            A basic webpage built using headings, images, paragraphs, and links.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 2: Landing Page</h3>
+          <p>A modern landing page layout using Flexbox and CSS styling.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <!-- 
+        Provides a way for visitors to contact you
+        Could include email, phone, or social media links
+      -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: student@example.com</p>
+      </section>
+    </main>
+
+    <!------------ Footer Section ----------->
+    <!-- 
+      Footer contains copyright info or additional links 
+      Usually at the bottom of the page
+    -->
+    <footer>
+      <p>© 2025 Student Portfolio — All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
