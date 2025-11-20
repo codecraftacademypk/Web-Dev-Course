@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The title of the webpage (shown on browser tab) -->
+    <title>Lecture 11</title>
+  </head>
+
+  <body>
+    <!---------- Video Section --------->
+    <!-- 
+      <video> tag is used to embed videos directly into HTML.
+      width="" and height="" set the size of the video.
+      controls → adds play/pause buttons.
+      autoplay → video starts playing automatically.
+      muted → required when autoplay is used (otherwise browsers block autoplay).
+    -->
+    <video width="300" height="200" controls autoplay muted>
+      <!-- 
+        <source> tag provides different video formats.
+        Browser will pick the first supported format.
+      -->
+      <source src="./Web Dev Course Lecture 01.mp4" type="video/mp4" />
+      <source src="./Web Dev Course Lecture 01.mp4" type="video/web" />
+      <source src="./Web Dev Course Lecture 01.mp4" type="video/ogg" />
+
+      <!-- 
+        If the browser does not support the above formats,
+        it will show the fallback text below.
+      -->
+      Your browser does not support the video tag.
+    </video>
+
+    <br /><br />
+
+    <!---------- YouTube Video Section --------->
+    <!-- 
+      <iframe> is used to embed external content like YouTube videos, maps, etc.
+
+      width, height → control the size of the video frame.
+      src → YouTube video link (embed format).
+
+      frameborder="0" → removes border around the video.
+      allow="" → gives permission for autoplay, fullscreen, clipboard, etc.
+      allowfullscreen → allows the video to be played in fullscreen.
+      referrerpolicy → controls privacy and data leakage.
+    -->
+    <iframe
+      width="300"
+      height="200"
+      src="https://www.youtube.com/embed/_2-T_okqGJs?si=ZaQHlq19xlh2uUA4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

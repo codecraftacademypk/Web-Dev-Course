@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The text shown on the browser tab -->
+    <title>Lecture 12</title>
+  </head>
+
+  <body>
+    <!----------- Audio Section ---------->
+
+    <!-- 
+      <audio> tag is used to embed sound/audio in a webpage.
+
+      Attributes:
+      • controls → shows play / pause / volume controls.
+      • autoplay → audio starts playing automatically on page load.
+      • loop → audio repeats again and again after finishing.
+      • muted → audio begins in muted state (required for autoplay support in browsers).
+    -->
+    <audio controls autoplay loop muted>
+      <!-- 
+        <source> tag provides different audio formats.
+        The browser plays the first compatible format.
+        We provide multiple formats for better support across browsers.
+      -->
+      <source src="./audio.mp3" type="audio/mp3" />
+      <source src="./audio.mp3" type="audio/ogg" />
+      <source src="./audio.mp3" type="audio/wav" />
+
+      <!-- 
+        Fallback text: This will show only if the browser
+        does not support the <audio> tag.
+      -->
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
