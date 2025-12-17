@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap");
+/* ========== CSS Font ========== */
+/* CSS fonts decide how your text looks, how beautiful, readable, and professional it appears. */
+
+/* 1: font-family */
+/* 2: font-size */
+/* 3: font-weight */
+/* 4: font-style */
+/* 5: font-variant */
+/* 6: line-height */
+/* 7: letter-spacing */
+/* 8: word-spacing */
+html {
+  font-size: 62.5%;
+}
+
+/* ===== font family ====== */
+/* The font-family property defines which font(s) should be used for text */
+.text1 {
+  font-family: cursive;
+}
+
+/* ===== font-size ===== */
+/* The font-size property controls the size of the text */
+.text2 {
+  font-size: 1.8rem;
+}
+/* ===== font-weight ===== */
+/* The font-weight property controls the thickness of the text. */
+.text3 {
+  font-weight: 900;
+}
+/* ===== font-style ===== */
+/* The font-style property defines the style of the font, typically italic or normal. */
+.text4 {
+  font-style: italic;
+}
+
+/* ===== font-variant ===== */
+/* uppercase but smaller letters */
+.text5 {
+  font-variant: small-caps;
+}
+
+/* ===== line-height ===== */
+/* Controls space between lines */
+.para {
+  line-height: 1.5;
+}
+
+/* ===== letter-spacing ===== */
+/* Space between letters */
+.text6 {
+  letter-spacing: 0.2rem;
+}
+
+/* ===== word-spacing ===== */
+/* Space between words */
+.text7 {
+  word-spacing: 3rem;
+}
+
+/* ============================================ */
+/* ========== CSS Font Shorthand =========== */
+.text8 {
+  font: bold 3rem cursive;
+}
+
+/* ============================================= */
+/* ========== Web Safe Fonts =========== */
+/* Web safe fonts are commonly supported across all browsers and operating systems. */
+
+/* Arial, Times New Roman, Verdana etc */
+.wf {
+  font-family: "Verdana";
+}
+
+/* ========== Custom Fonts ========== */
+/* Custom fonts allow you to use fonts that are not pre-installed on a user’s device. You can load them using web fonts. */
+.cf {
+  font-family: "Bitcount Prop Single", system-ui;
+}

@@ -1,0 +1,61 @@
+/* ============ CSS Width & Hight ========== */
+
+/* The width and height properties in CSS are used to define the dimensions of an element. */
+
+/* 1: width and hight*/
+/* 2: max-width */
+/* 3: min-width */
+/* 4: max-hight */
+/* 5: min-hight */
+
+/* ===== Widht and Hight ===== */
+
+html {
+  font-size: 62.5%;
+}
+.wh {
+  width: 40%;
+  height: 6rem;
+  border: 0.2rem solid green;
+}
+
+.img {
+  width: 30rem;
+  height: 20rem;
+}
+
+/* ===== max-width ===== */
+/* The max-width property is used to set the maximum width of a box. */
+
+.maxw {
+  max-width: 60rem;
+  font-size: 2rem;
+  border: 0.2rem solid green;
+}
+
+/* ===== mix-width ===== */
+/* The min-width property is used to set the minimum width of a box. */
+.minw {
+  min-width: 40rem;
+  font-size: 2rem;
+  border: 0.2px solid green;
+}
+
+/* ===== max-hight ===== */
+/* The max-height property is used to set the maximum height of a box. */
+
+.maxh {
+  max-height: 60rem;
+  width: 30rem;
+  border: 0.2rem solid green;
+  font-size: 2rem;
+}
+
+/* ===== mix-hight ===== */
+/* The min-height property is used to set the minimum height of a box. */
+
+.minh {
+  min-height: 30rem;
+  font-size: 2rem;
+  border: 0.2rem solid green;
+}

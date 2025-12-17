@@ -1,0 +1,79 @@
+/* =========== CSS Unit ========== */
+/* CSS units define the size of elements */
+
+/* 01: Absolute Unit */
+/* 02: Relative Unit */
+
+/* ===== Absolute Unit ===== */
+/* Absolute units in CSS, such as px, cm, and mm, have fixed values and do not change based on the viewport or parent elements. */
+
+/* == cm == */
+/* 1m = 100cm */
+/* 1cm =37.8px
+2cm = 75.59px */
+.cm p {
+  font-size: 0.5cm;
+}
+/* == mm == */
+/* 1cm =10mm */
+
+.mm p {
+  font-size: 5mm;
+}
+/* == px == */
+.px p {
+  font-size: 24px;
+}
+
+/* ===== Relative Unit ===== */
+/* These units change based on the screen size, parent element, or root font-size.
+
+They make your website responsive (work better on all devices). */
+
+/* == em == */
+/* In CSS , the "em" unit refers to the font-size of its parent element */
+.em {
+  font-size: 20px;
+}
+.em p {
+  font-size: 2em;
+}
+
+/* == rem == */
+/* In CSS, rem is based on the font-size of the root element */
+html {
+  font-size: 10px;
+}
+.rem p {
+  font-size: 2rem;
+}
+
+/* == Percentage (%) == */
+/* The % unit in CSS is relative to the parent element's size, allowing elements to adjust dynamically for responsive design. */
+
+.per {
+  width: 500px;
+  height: 300px;
+  background: green;
+}
+
+.per div {
+  width: 70%;
+  height: 30%;
+  background: black;
+}
+
+/* == vw or view-width == */
+
+.vw {
+  width: 100vw;
+  height: 10vh;
+  background-color: brown;
+}
+/* == vh or view-height == */
+
+.vh {
+  width: 200px;
+  height: 100vh;
+  background: green;
+}

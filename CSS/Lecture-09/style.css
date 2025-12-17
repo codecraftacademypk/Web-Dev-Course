@@ -1,0 +1,53 @@
+/* ========== CSS Background =========== */
+/* CSS background is used to set the color, image, or gradient behind an HTML element and control how it appears, such as its position, size, and repetition. */
+html {
+  font-size: 62.5%;
+}
+/* ===== Background-color ===== */
+/* Sets a solid color behind the content e.g button. */
+.container {
+  width: 100rem;
+  height: 40rem;
+  border: 0.2rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  color: white;
+  font-size: 2rem;
+}
+
+/* ===== Background-image ===== */
+/* Image appears behind the content */
+.container {
+  /* background-image: url("https://images.pexels.com/photos/29531041/pexels-photo-29531041.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+/* ===== Background-repeat ===== */
+/* Controls how the background image repeats. */
+
+/* ===== Background-position ===== */
+/* Sets the position of the background image. */
+
+/* ===== Background-size ===== */
+/* Controls the size of the background image. */
+
+/* ===== Background-attachment */
+/* Controls whether the background scrolls with the page. */
+
+/* ===== CSS Background with Gradient ===== */
+/* Gradients are image backgrounds created using CSS (no image file needed). */
+.container {
+  background: linear-gradient(
+    to bottom,
+    red,
+    green,
+    orange,
+    yellow,
+    brown,
+    blue
+  );
+}

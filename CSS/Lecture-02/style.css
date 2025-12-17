@@ -1,0 +1,85 @@
+/* ========== CSS Syntax ========== */
+/* CSS syntax is the basic structure format used to style HTML elements. */
+
+/* selector{
+  property: value
+} */
+
+/* =========================================================== */
+
+/* ========== CSS Selector ========= */
+
+/* CSS Selectors are used to target HTML elements on our pages, allowing us to apply styles based on their ID, class, type attributes, and more.  */
+
+/* 01: Universal Selector (*) */
+/* 02: Element Selector */
+/* 03: Class Selector (.) */
+/* 04: ID Selector (#) */
+/* 05: Grouping and Nesting of CSS Selectors */
+
+/* ===== 01: Universal Selector (*) ===== */
+/* Selects **every element** on the webpage. It is often used to apply general styles like margin or padding reset. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== 02: Element Selector ====== */
+/* Targets elements by their **HTML tag name**, such as p, h1, div, or img. It applies the style to all elements of that type. */
+
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+/* ====== 03: Class Selector (.) ===== */
+/* Selects all elements that share the same **class attribute**. Classes are used when you want to style **multiple elements** in the same way. */
+
+.list-item {
+  color: green;
+}
+
+/* ====== 04: ID Selector (#) ===== */
+/* Selects a single element using its **unique ID attribute**. IDs should be used for elements that appear **only once** on the page. */
+
+#home {
+  color: yellow;
+}
+
+#about {
+  color: black;
+}
+
+/* ===== 05: Grouping and Nesting of CSS Selectors ===== */
+/* 01: Grouping */
+
+h1,
+h2,
+h3 {
+  color: green;
+}
+/* 02: Nesting */
+ul li {
+  background-color: yellow;
+  margin: 5px;
+}
+
+div p span {
+  color: green;
+}
+
+/* ============================================================ */
+
+/* =========== CSS Comments ========== */
+/* CSS comments are used to add notes or explanations to our code, helping us and others understand it better. */
+
+/* Single line comment */
+/* Multi Line
+ comment
+ in 
+ css
+*/

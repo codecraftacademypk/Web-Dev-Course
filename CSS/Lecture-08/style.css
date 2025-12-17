@@ -1,0 +1,73 @@
+/* ========== CSS Borders ========== */
+/* CSS borders define the outline around an HTML element */
+
+/* 1: Border Width */
+/* 2: Border Style */
+/* 3: Border Color */
+/* 4: Border radius */
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rem solid black;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.box1 {
+  /* border-width: 0.5rem;
+  border-style: solid;
+  border-color: green; */
+  border: 0.5rem solid green;
+}
+
+.box2 {
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+  border-top-color: brown;
+}
+
+.box3 {
+  border-width: 0.5rem;
+  border-style: solid;
+  border-top-color: green;
+  border-right-color: brown;
+  border-bottom-color: blue;
+  border-left-color: black;
+}
+
+.box4 {
+  background: #000;
+  color: white;
+  font-size: 2rem;
+  border-radius: 100%;
+}
+
+.btn button {
+  border: none;
+  background: brown;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+.text {
+  width: 60rem;
+  border: 0.5rem solid green;
+  font-size: 2rem;
+  padding: 2rem;
+}

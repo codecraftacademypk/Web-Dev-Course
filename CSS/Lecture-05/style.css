@@ -1,0 +1,42 @@
+/* ========== CSS Color ========== */
+/* CSS colors are used to change the look of text, backgrounds, borders, and other elements on a webpage.  */
+
+/* 1: Name */
+/* 2: RGB */
+/* 3: RGBA */
+/* 4: HEX Code */
+/* 5: HSL */
+
+html {
+  font-size: 62.5%;
+}
+/* ===== Name ===== */
+.cn {
+  width: 60rem;
+  height: 6rem;
+  border: 0.2rem solid black;
+  color: green;
+  font-size: 2rem;
+}
+/* ===== RGB ===== */
+.rgb {
+  color: rgb(247, 33, 5);
+  font-size: 2rem;
+}
+/* ===== RGBA ===== */
+
+.rgba {
+  color: #0ce947e3;
+}
+/* ===== HEX Code ===== */
+.hex {
+  color: #ff32a6;
+  max-width: 30rem;
+  border: 0.2rem solid #000;
+  font-size: 2rem;
+  background-color: #008000;
+}
+/* ===== HSL ===== */
+.hsl {
+  color: hsla(73, 91%, 43%, 0.643);
+}
