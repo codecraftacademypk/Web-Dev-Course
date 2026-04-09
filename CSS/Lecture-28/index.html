@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remix CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Amazone Clone</title>
+  </head>
+  <body>
+    <!-- Amazon Navbar -->
+    <header class="amz-nav">
+      <!-- Logo -->
+      <div class="amz-logo">
+        <img src="./images/amazon_logo.png" alt="logo" />
+      </div>
+      <!-- Location -->
+      <div class="amz-loc">
+        <i class="ri-map-pin-line"></i>
+        <div>
+          <span class="sm-text">Deliver to</span>
+          <span class="lg-text">Pakistan</span>
+        </div>
+      </div>
+      <!-- Search -->
+      <div class="amz-search">
+        <select>
+          <option>All</option>
+        </select>
+        <input type="text" placeholder="Search" />
+        <button><i class="ri-search-line"></i></button>
+      </div>
+      <!-- Flag -->
+      <div class="amz-flag">
+        <img src="./images/pakistan flag.png" alt="flag" />
+        <p class="lg-text">EN</p>
+        <i class="ri-arrow-down-s-fill"></i>
+      </div>
+      <!-- Account -->
+      <div class="amz-acc">
+        <div>
+          <span class="sm-text">Hello, Sign in</span>
+          <span class="lg-text">Accounts & Lists</span>
+        </div>
+        <i class="ri-arrow-down-s-fill"></i>
+      </div>
+      <!-- Orders -->
+      <div class="amz-orders">
+        <div>
+          <span class="sm-text">Returns</span>
+          <span class="lg-text">& Orders</span>
+        </div>
+      </div>
+      <!-- Cart -->
+      <div class="amz-cart">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="lg-text">Cart</span>
+        <span class="cart-num">2</span>
+      </div>
+    </header>
+
+    <!-- Amazon Penal -->
+    <nav class="amz-penal">
+      <ul class="amz-penal-list">
+        <li class="amz-penal-item"><a href="#">All</a></li>
+        <li class="amz-penal-item"><a href="#">Medical Care</a></li>
+        <li class="amz-penal-item"><a href="#">Amazon Basies</a></li>
+        <li class="amz-penal-item"><a href="#">Best Sellers</a></li>
+        <li class="amz-penal-item"><a href="#">Prime</a></li>
+        <li class="amz-penal-item"><a href="#">Books</a></li>
+        <li class="amz-penal-item"><a href="#">Rgister</a></li>
+        <li class="amz-penal-item"><a href="#">Gift Cards</a></li>
+        <li class="amz-penal-item"><a href="#">Smart Home</a></li>
+        <li class="amz-penal-item"><a href="#">New Release</a></li>
+        <li class="amz-penal-item"><a href="#">Today's Deals</a></li>
+        <li class="amz-penal-item"><a href="#">Pharmacy</a></li>
+        <li class="amz-penal-item"><a href="#">Customer Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- Amazon Main -->
+    <main class="amz-main-content">
+      <!-- Hero Section -->
+      <section class="amz-hero-section"></section>
+
+      <!-- Product Section -->
+      <section class="amz-product-section">
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Trending spring bags</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-1 Bottega Veneta.jpg" alt="" />
+              <p class="amz-card-label">Bottega Veneta</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-2 Chanel.jpg" alt="" />
+              <p class="amz-card-label">Chanel</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-3 Saint Laurent.jpg" alt="" />
+              <p class="amz-card-label">Saint Laurent</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-4 Cucci.jpg" alt="" />
+              <p class="amz-card-label">Cucci</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop luxury</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">A nod to neutrals</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-5 Dressess.jpg" alt="" />
+              <p class="amz-card-label">Dressess</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-6 Shoes.jpg" alt="" />
+              <p class="amz-card-label">Shoes</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-7 Bags.jpg" alt="" />
+              <p class="amz-card-label">Bags</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-8 Accessories.jpg" alt="" />
+              <p class="amz-card-label">Accessories</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop new luxury spring</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Zappos sneaker edit</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-9 Women Sneakers.jpg" alt="" />
+              <p class="amz-card-label">Women Sneakers</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-10 Men Sneakers.jpg" alt="" />
+              <p class="amz-card-label">Men Sneakers</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-11 Boys Sneakers.jpg" alt="" />
+              <p class="amz-card-label">Boys Sneakers</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-12 Girl Sneakers.jpg" alt="" />
+              <p class="amz-card-label">Girl Sneakers</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">See more</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">New on Amazon: Everlane</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-13 Women Clothing.jpg" alt="" />
+              <p class="amz-card-label">Women Clothing</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-14 Men Clothing.jpg" alt="" />
+              <p class="amz-card-label">Men Clothing</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-15 Denim.jpg" alt="" />
+              <p class="amz-card-label">Denim</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-16 Accessories.jpg" alt="" />
+              <p class="amz-card-label">Accessories</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop elevate basic</a>
+        </div>
+      </section>
+
+      <!-- Horizontal Product Section -->
+      <section class="amz-hz-section">
+        <div class="amz-hz">
+          <h2 class="amz-hz-title">Best Sellers in Electronics</h2>
+
+          <div class="amz-hz-products">
+            <div class="amz-hz-item">
+              <img src="./images//product-17.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-18.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-19.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-20.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-21.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-22.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images//product-23.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section class="amz-product-section amz-products">
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Shop up to 30% off styles</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-24 Fashion.jpg" alt="" />
+              <p class="amz-card-label">Fashion</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-25 Decor.jpg" alt="" />
+              <p class="amz-card-label">Decor</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-26 Spring Favorites.jpg" alt="" />
+              <p class="amz-card-label">Spring Favorites</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-27 Trip Essentials.jpg" alt="" />
+              <p class="amz-card-label">Essentials</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop now on shopbob</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Date-night ready</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-28 Statement Heels.jpg" alt="" />
+              <p class="amz-card-label">Statement Heels</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product- 29 Tall Boots.jpg" alt="" />
+              <p class="amz-card-label">Tall Boots</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-30 Fancy Flats.jpg" alt="" />
+              <p class="amz-card-label">Fancy Flats</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-31 Accessories.jpg" alt="" />
+              <p class="amz-card-label">Accessories</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop event ready style</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Shop spring Shopbop</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-32 The dress shop.jpg" alt="" />
+              <p class="amz-card-label">The dress shop</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-33 Sunglessess eyewear.jpg" alt="" />
+              <p class="amz-card-label">Sunglessess eyewear</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-34 Bags.jpg" alt="" />
+              <p class="amz-card-label">Bags</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-35 Shoes.jpg" alt="" />
+              <p class="amz-card-label">Shoes</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop now</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Baby Sale: Up to 30% off</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-36 Car Seats.jpg" alt="" />
+              <p class="amz-card-label">Car Seats</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-37 Feedig Essentials.jpg" alt="" />
+              <p class="amz-card-label">Feedig Essentials</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-38 Baby Skincare.jpg" alt="" />
+              <p class="amz-card-label">Baby Skincare</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-39 Baby Sleepwear.jpg" alt="" />
+              <p class="amz-card-label">Baby Sleepwear</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop baby sale</a>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section class="amz-product-section amz-products">
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Pet wellness must-haves</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-40 Dog flea tick.jpg" alt="" />
+              <p class="amz-card-label">Dog flea tick</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-41 Cat flea tick.jpg" alt="" />
+              <p class="amz-card-label">Cat flea tick</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-42 Supplements.jpg" alt="" />
+              <p class="amz-card-label">Supplements</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-43 Pet wellness deals.jpg" alt="" />
+              <p class="amz-card-label">Pet wellness deals</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop all pet wellness</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Shop spring trends</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-44 Men new arrivals.jpg" alt="" />
+              <p class="amz-card-label">Men new arrivals</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-45 Essential shirts.jpg" alt="" />
+              <p class="amz-card-label">Essential shirts</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-46 Jeans.jpg" alt="" />
+              <p class="amz-card-label">Jeans</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-47 Accessories.jpg" alt="" />
+              <p class="amz-card-label">Accessories</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop now</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Shop activewear styles</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-48 The ski shop.jpg" alt="" />
+              <p class="amz-card-label">The ski shop</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-49 Cardio running.jpg" alt="" />
+              <p class="amz-card-label">Cardio running</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-50 Yogo pilates.jpg" alt="" />
+              <p class="amz-card-label">Yogo pilates</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-51 Men golf shop.jpg" alt="" />
+              <p class="amz-card-label">Men golf shop</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">See more</a>
+        </div>
+        <!-- Card 1 -->
+        <div class="amz-card amz-card--four">
+          <h2 class="amz-card-title">Shop up to 30% off styles</h2>
+          <div class="amz-card-four">
+            <div class="amz-card-item">
+              <img src="./images/product-52 Additional markdowns.jpg" alt="" />
+              <p class="amz-card-label">Additional markdowns</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-53 Accessories.jpg" alt="" />
+              <p class="amz-card-label">Accessories</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-54 Bags.jpg" alt="" />
+              <p class="amz-card-label">Bags</p>
+            </div>
+            <div class="amz-card-item">
+              <img src="./images/product-55 Men's.jpg" alt="" />
+              <p class="amz-card-label">Men's</p>
+            </div>
+          </div>
+          <a href="#" class="amz-card-link">Shop now on Shopbob</a>
+        </div>
+      </section>
+
+      <!-- Horizontal Product Section -->
+      <section class="amz-hz-section">
+        <div class="amz-hz">
+          <h2 class="amz-hz-title">Best Sellers in Grocery & Gourmet Food</h2>
+
+          <div class="amz-hz-products">
+            <div class="amz-hz-item">
+              <img src="./images/product-56.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-57.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-58.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-59.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-60.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-61.jpg" alt="" />
+            </div>
+            <div class="amz-hz-item">
+              <img src="./images/product-62.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sign in Section -->
+      <section class="amz-signin-section">
+        <div class="amz-signin-box">
+          <h2 class="amz-signin-title">See personalized recommendations</h2>
+          <button class="amz-signin-btn">Sign in</button>
+          <p class="amz-signin-text">
+            New sustomer?
+            <a href="#">Start here.</a>
+          </p>
+        </div>
+      </section>
+      <!-- Footer Section -->
+      <footer class="amz-footer">
+        <!-- Back to Top -->
+        <div class="amz-footer-top">
+          <p>Back to Top</p>
+        </div>
+        <!-- Footer main -->
+        <div class="amz-footer-main">
+          <div class="amz-footer-container">
+            <div class="amz-footer-col">
+              <h3>Get to Know Us</h3>
+              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+              <a href="#">About Amazon</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Amazon Devices</a>
+            </div>
+
+            <div class="amz-footer-col">
+              <h3>Make Money with Us</h3>
+              <a href="#">Sell products on Amazon</a>
+              <a href="#">Sell on Amazon Business</a>
+              <a href="#">Sell apps on Amazon</a>
+              <a href="#">Become an Affiliate</a>
+              <a href="#">Advertise Your Products</a>
+            </div>
+
+            <div class="amz-footer-col">
+              <h3>Amazon Payment Products</h3>
+              <a href="#">Amazon Business Card</a>
+              <a href="#">Shop with Points</a>
+              <a href="#">Reload Your Balance</a>
+              <a href="#">Amazon Currency Converter</a>
+            </div>
+
+            <div class="amz-footer-col">
+              <h3>Let Us Help You</h3>
+              <a href="#">Amazon and COVID-19</a>
+              <a href="#">Your Account</a>
+              <a href="#">Your Orders</a>
+              <a href="#">Shipping Rates</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="amz-footer-bottom">
+          <p>© 2026 Amazon Clone | Designed by CodeCraft Academy</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
