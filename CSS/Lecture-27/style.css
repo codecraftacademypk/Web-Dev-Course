@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segue UI", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar {
+  max-width: 100%;
+  height: 7.5rem;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 20rem;
+}
+
+.search-box i {
+  font-size: 1.8rem;
+  color: #ff9800;
+}
+
+.menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  width: 0;
+  height: 0.2rem;
+  background: #ff9800;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-btn {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -32rem;
+  width: 28rem;
+  height: 100%;
+  background: #111;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: 0.4s ease;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header h2 {
+  color: #ff9800;
+  font-size: 2.4rem;
+}
+
+.close-btn {
+  font-size: 2.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.mobile-login {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .login-btn {
+    display: none;
+  }
+}

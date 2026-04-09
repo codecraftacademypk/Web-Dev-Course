@@ -1,0 +1,46 @@
+/* ========== CSS Pseudo Element ========== */
+/* CSS pseudo-element is used to style a specific part of an element, like the first letter or content before/after it. */
+
+/* ::before */
+/* ::after */
+/* ::first-letter */
+/* ::first-line */
+/* ::selection */
+
+html {
+  font-size: 62.5%;
+}
+
+.heading {
+  color: red;
+  font-size: 3rem;
+}
+
+.heading::before {
+  content: "Welcome to ";
+  font-size: 4rem;
+  color: black;
+}
+
+.heading::after {
+  content: "👈";
+}
+
+.para {
+  font-size: 1.8rem;
+}
+
+.para::first-letter {
+  font-size: 3rem;
+  color: red;
+}
+
+.para::first-line {
+  color: blue;
+  font-size: 2.5rem;
+}
+
+.para::selection {
+  background-color: red;
+  color: white;
+}

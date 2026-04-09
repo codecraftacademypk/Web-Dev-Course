@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Page Background */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Form Box */
+.signup-form {
+  width: 35rem;
+  background-color: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+}
+
+/* Tittle */
+.form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 3rem;
+}
+
+/* Labels */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* Input */
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ccc;
+  font-size: 1.4rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Button */
+.form-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #5a67d8;
+}
+
+/* Bottom text */
+.form-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.form-link {
+  color: #667eea;
+  text-decoration: none;
+}

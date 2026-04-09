@@ -1,0 +1,85 @@
+/* ========== CSS Pseudo-Class ========== */
+/* Pseudo-Class allows us to apply styles when an element is in a particular condition, such as when it is hovered, clicked, focused, or visited. */
+
+/* :hover */
+/* :active */
+/* :visited */
+/* :focus */
+/* :first-child */
+/* :last-child */
+/* :nth-child() */
+
+html {
+  font-size: 62.5%;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: brown;
+  color: white;
+  border-radius: 20rem;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.btn:active {
+  background-color: black;
+}
+
+.visit {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 0.2rem solid black;
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 20rem;
+}
+
+.visit:hover {
+  background-color: brown;
+}
+
+.visit:active {
+  background-color: yellow;
+}
+
+.visit:visited {
+  background-color: blue;
+}
+
+input:focus {
+  border: 0.2rem solid green;
+  outline: none;
+}
+
+.container {
+  width: 60rem;
+  height: 40rem;
+  border: 0.2rem solid black;
+}
+
+.item {
+  width: 10rem;
+  height: 10rem;
+  background-color: brown;
+  color: white;
+  font-size: 1.8rem;
+}
+
+div:first-child {
+  background-color: yellow;
+}
+
+div:last-child {
+  background-color: black;
+}
+
+div:nth-child(2) {
+  background-color: green;
+}

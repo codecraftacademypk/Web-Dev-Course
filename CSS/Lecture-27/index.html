@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Remix CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lecture 27</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">Navbar</div>
+      <!-- Search -->
+      <div class="search-box">
+        <input type="text" placeholder="Search courses..." />
+        <i class="ri-search-line"></i>
+      </div>
+      <!-- Desktop Menu -->
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Roadmaps</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+      <!-- Right Side -->
+      <div class="right-section">
+        <button class="login-btn">Login</button>
+        <i class="ri-menu-line menu-icon" id="menuBtn"></i>
+      </div>
+    </header>
+    <!-- Mobile Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>Menu</h2>
+        <i class="ri-close-line close-btn" id="closeBtn"></i>
+      </div>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Tutorials</a>
+      <a href="#">Roadmaps</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <button class="mobile-login">Login</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

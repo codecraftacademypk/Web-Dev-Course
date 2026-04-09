@@ -1,0 +1,61 @@
+/* ============ CSS Media Queries ============ */
+/* CSS Media Queries allow us to apply different CSS styles for different screen sizes and devices */
+
+/* max-width */
+/* min-width */
+
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: brown;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    background-color: blue;
+    color: red;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.cbox {
+  width: 30rem;
+  height: 15rem;
+  background-color: brown;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cbox {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container .cbox {
+    background-color: yellow;
+    color: black;
+  }
+}
